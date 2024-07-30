@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container py-5 w-75 mx-auto">
+      <div class="wrapper row">
+        <div
+          class="col-12 col-md-4 col-lg-3 col-xl-2 nav-tabs nav flex-md-column nav-pills"
+        >
+          <button
+            class="nav-link mb-2 btn-tab active"
+            id="v-pills-bai-1-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-bai-1"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-bai-1"
+            aria-selected="true"
+          >
+            Bài 1
+          </button>
+          <button
+            class="nav-link mb-2 btn-tab"
+            id="v-pills-bai-2-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-bai-2"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-bai-2"
+            aria-selected="false"
+          >
+            Bài 2
+          </button>
+          <button
+            class="nav-link mb-2 btn-tab"
+            id="v-pills-bai-3-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-bai-3"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-bai-3"
+            aria-selected="false"
+          >
+            Bài 3
+          </button>
+          <button
+            class="nav-link mb-2 btn-tab"
+            id="v-pills-bai-4-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-bai-4"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-bai-4"
+            aria-selected="false"
+          >
+            Bài 4
+          </button>
+          <button
+            class="nav-link mb-2 btn-tab"
+            id="v-pills-bai-5-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-bai-5"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-bai-5"
+            aria-selected="false"
+          >
+            Bài 5
+          </button>
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-10 tab-content">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-bai-1"
+            role="tabpanel"
+            aria-labelledby="v-pills-bai-1-tab"
+            tabindex="0"
+          >
+            <h2 class="text-success mb-4">💰 Tính tiền lương nhân viên</h2>
+            <p>Lương 1 ngày là <span class="text-danger">100.000 VNĐ</span></p>
+            <div class="row gy-4">
+              <div class="col-12 col-lg-4">
+                <label for="e1_input">Số ngày làm</label>
+                <input
+                  id="e1_input"
+                  type="number"
+                  placeholder="Nhập số ngày làm"
+                />
+              </div>
+              <div
+                class="col-12 col-lg-4 d-flex align-items-end justify-content-center"
+              >
+                <button class="btn btn-primary" id="btnTinhLuong">
+                  Tính lương
+                </button>
+              </div>
+              <div class="col-12 alert alert-success">
+                👉<span class="ms-2" id="e1_result"></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-bai-2"
+            role="tabpanel"
+            aria-labelledby="v-pills-bai-2-tab"
+            tabindex="0"
+          >
+            <h2 class="text-success mb-4">📚 Tính giá trị trung bình</h2>
+
+            <div class="row gy-4">
+              <div class="col-12 col-lg-4">
+                <input
+                  id="e2_input1"
+                  type="number"
+                  placeholder="Nhập số thứ 1"
+                />
+              </div>
+              <div class="col-12 col-lg-4">
+                <input
+                  id="e2_input2"
+                  type="number"
+                  placeholder="Nhập số thứ 2"
+                />
+              </div>
+              <div class="col-12 col-lg-4">
+                <input
+                  id="e2_input3"
+                  type="number"
+                  placeholder="Nhập số thứ 3"
+                />
+              </div>
+              <div class="col-12 col-lg-4">
+                <input
+                  id="e2_input4"
+                  type="number"
+                  placeholder="Nhập số thứ 4"
+                />
+              </div>
+              <div class="col-12 col-lg-4">
+                <input
+                  id="e2_input5"
+                  type="number"
+                  placeholder="Nhập số thứ 5"
+                />
+              </div>
+              <div
+                class="col-12 col-lg-4 d-flex align-items-end justify-content-center"
+              >
+                <button class="btn btn-primary" id="btnTrungBinh">
+                  Tính trung bình
+                </button>
+              </div>
+              <div class="col-12 alert alert-success">
+                👉<span class="ms-2" id="e2_result"></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-bai-3"
+            role="tabpanel"
+            aria-labelledby="v-pills-bai-3-tab"
+            tabindex="0"
+          >
+            <h2 class="text-success mb-4">💱 Quy đổi tiền</h2>
+            <p>
+              Số tiền quy đổi 1USD = <span class="text-danger">23.500 VNĐ</span>
+            </p>
+            <div class="row gy-4">
+              <div class="col-12 col-lg-4">
+                <label for="e3_input">Số tiền USD</label>
+                <input
+                  id="e3_input"
+                  type="number"
+                  placeholder="Nhập số tiền USD"
+                />
+              </div>
+              <div
+                class="col-12 col-lg-4 d-flex align-items-end justify-content-center"
+              >
+                <button class="btn btn-primary" id="btnQuyDoiTien">
+                  Quy đổi tiền
+                </button>
+              </div>
+              <div class="col-12 alert alert-success">
+                👉<span class="ms-2" id="e3_result"></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-bai-4"
+            role="tabpanel"
+            aria-labelledby="v-pills-bai-4-tab"
+            tabindex="0"
+          >
+            bai4
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-bai-5"
+            role="tabpanel"
+            aria-labelledby="v-pills-bai-5-tab"
+            tabindex="0"
+          >
+            bai5
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main JS  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
