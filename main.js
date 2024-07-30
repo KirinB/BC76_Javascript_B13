@@ -56,3 +56,45 @@ document.getElementById("btnQuyDoiTien").onclick = () => {
     }
   );
 };
+
+/*Bài tập 4
+Người dùng nhập chiều dài và chiều rộng tính diện tích chu vi
+*/
+
+document.getElementById("btnTinhDTCV").onclick = () => {
+  //Input
+  const chieuDai = document.getElementById("e4_inputCD").value * 1;
+  const chieuRong = document.getElementById("e4_inputCR").value * 1;
+  //Handle
+
+  const CHU_VI = (chieuDai + chieuRong) * 2;
+  const DIEN_TICH = chieuDai * chieuRong;
+
+  //Output
+
+  document.getElementById(
+    "e4_result"
+  ).innerHTML = `Chu vi là <span class="text-primary">${CHU_VI}</span>. Diện Tích là <span class="text-danger">${DIEN_TICH}</span>.`;
+};
+
+/*Bài tập 5
+Nhập số có 2 chữ số tính tổng 2 ký số đó
+*/
+
+document.getElementById("btnTinhTong").onclick = () => {
+  //Input
+  const kySo = document.getElementById("e5_input").value * 1;
+  //Handle
+  const SO_HANG_DON_VI = kySo % 10;
+  const SO_HANG_CHUC = Math.floor(kySo / 10);
+
+  if (10 > kySo || kySo >= 100) {
+    alert("Vui lòng nhập số có 2 chữ số");
+  } else {
+    const TOTAL = SO_HANG_CHUC + SO_HANG_DON_VI;
+    //Output
+    document.getElementById(
+      "e5_result"
+    ).innerHTML = `Tổng 2 ký số của ${kySo} là <span class="text-danger">${TOTAL}</span>`;
+  }
+};
